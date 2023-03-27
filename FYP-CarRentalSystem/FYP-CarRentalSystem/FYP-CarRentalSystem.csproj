@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FDA507D-05DB-42E9-B395-39FB1C4A28B1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FYP_CarRentalSystem</RootNamespace>
+    <AssemblyName>FYP-CarRentalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\Users\Dastgeer\Downloads\Compressed\ModalPopupExtenderExample\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About Us.aspx" />
+    <Content Include="Accountant\AvailableCars.aspx" />
+    <Content Include="Accountant\BookedCars.aspx" />
+    <Content Include="Accountant\ReturnCar.aspx" />
+    <Content Include="Accountant\UserDetailOfBookings.aspx" />
+    <Content Include="Accountant\UserDetailOfCarRent.aspx" />
+    <Content Include="Accounts\Manage.aspx" />
+    <Content Include="Accounts\ResetPassword.aspx" />
+    <Content Include="Admin\AllUsersDetail.aspx" />
+    <Content Include="Admin\Detail.aspx" />
+    <Content Include="Admin\Edit.aspx" />
+    <Content Include="Admin\ManageCars.aspx" />
+    <Content Include="Admin\Feebacks.aspx" />
+    <Content Include="Admin\ManageBrands.aspx" />
+    <Content Include="Admin\ManageCategory.aspx" />
+    <Content Include="Admin\ManageModels.aspx" />
+    <Content Include="Admin\RolesForm.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\dropdown.min.css" />
+    <Content Include="Dealer\ChooseCar.aspx" />
+    <Content Include="Dealer\DamageCars.aspx" />
+    <Content Include="Dealer\Detail.aspx" />
+    <Content Include="Dealer\Edit.aspx" />
+    <Content Include="Dealer\Feedback.aspx" />
+    <Content Include="Dealer\NewBrand.aspx" />
+    <Content Include="Dealer\NewCategory.aspx" />
+    <Content Include="Dealer\NewModel.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="Images\598870.jpg" />
+    <Content Include="Images\all-new-micra-banner-side.png" />
+    <Content Include="Images\background-Image-1.jpg" />
+    <Content Include="Images\background-Image-2.jpg" />
+    <Content Include="Images\background-Image-3.jpg" />
+    <Content Include="Images\background-Image-4.jpg" />
+    <Content Include="Images\cover.JPG" />
+    <Content Include="InvoiceManagement\GenerateInvoice.aspx" />
+    <Content Include="Policy.aspx" />
+    <Content Include="SearchResult.aspx" />
+    <Content Include="Userforms\Booking.aspx" />
+    <Content Include="Admin\ManageRoles.aspx" />
+    <Content Include="Dealer\NewCar.aspx" />
+    <Content Include="Userforms\Brandwise.aspx" />
+    <Content Include="Userforms\Categorywise.aspx" />
+    <Content Include="Userforms\Detail.aspx" />
+    <Content Include="Userforms\Feedback.aspx" />
+    <Content Include="Userforms\Modelwise.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="Dealer\History.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\lato-bold-webfont.svg" />
+    <Content Include="fonts\lato-light-webfont.svg" />
+    <Content Include="fonts\lato-medium-webfont.svg" />
+    <Content Include="fonts\lato-regular-webfont.svg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\333.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\444.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\555.jpg" />
+    <Content Include="Images\client1.png" />
+    <Content Include="Images\client2.png" />
+    <Content Include="Images\client3.png" />
+    <Content Include="Images\client4.png" />
+    <Content Include="Images\client5.png" />
+    <Content Include="Images\client8.png" />
+    <Content Include="Images\clockbg.jpg" />
+    <Content Include="Images\clocklanding.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\fevicon.ico" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\nissan.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="Accounts\Login.aspx" />
+    <Content Include="Accounts\Register.aspx" />
+    <Content Include="Userforms\History.aspx" />
+    <Content Include="Userforms\ReturnCar.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagewitholdMasterpage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.aspx.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About Us.aspx.designer.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accountant\AvailableCars.aspx.cs">
+      <DependentUpon>AvailableCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountant\AvailableCars.aspx.designer.cs">
+      <DependentUpon>AvailableCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accountant\BookedCars.aspx.cs">
+      <DependentUpon>BookedCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountant\BookedCars.aspx.designer.cs">
+      <DependentUpon>BookedCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accountant\ReturnCar.aspx.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountant\ReturnCar.aspx.designer.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accountant\UserDetailOfBookings.aspx.cs">
+      <DependentUpon>UserDetailOfBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountant\UserDetailOfBookings.aspx.designer.cs">
+      <DependentUpon>UserDetailOfBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accountant\UserDetailOfCarRent.aspx.cs">
+      <DependentUpon>UserDetailOfCarRent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountant\UserDetailOfCarRent.aspx.designer.cs">
+      <DependentUpon>UserDetailOfCarRent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\CustomRoleProvider1.cs" />
+    <Content Include="App_Code\MyConnectionHelper.cs" />
+    <Content Include="App_Code\SecUtil.cs" />
+    <Compile Include="Admin\AllUsersDetail.aspx.cs">
+      <DependentUpon>AllUsersDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AllUsersDetail.aspx.designer.cs">
+      <DependentUpon>AllUsersDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCars.aspx.cs">
+      <DependentUpon>ManageCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCars.aspx.designer.cs">
+      <DependentUpon>ManageCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Feebacks.aspx.cs">
+      <DependentUpon>Feebacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Feebacks.aspx.designer.cs">
+      <DependentUpon>Feebacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageBrands.aspx.cs">
+      <DependentUpon>ManageBrands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageBrands.aspx.designer.cs">
+      <DependentUpon>ManageBrands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCategory.aspx.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCategory.aspx.designer.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageModels.aspx.cs">
+      <DependentUpon>ManageModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageModels.aspx.designer.cs">
+      <DependentUpon>ManageModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RolesForm.aspx.cs">
+      <DependentUpon>RolesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RolesForm.aspx.designer.cs">
+      <DependentUpon>RolesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\ChooseCar.aspx.cs">
+      <DependentUpon>ChooseCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\ChooseCar.aspx.designer.cs">
+      <DependentUpon>ChooseCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\DamageCars.aspx.cs">
+      <DependentUpon>DamageCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\DamageCars.aspx.designer.cs">
+      <DependentUpon>DamageCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\NewBrand.aspx.cs">
+      <DependentUpon>NewBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\NewBrand.aspx.designer.cs">
+      <DependentUpon>NewBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\NewCategory.aspx.cs">
+      <DependentUpon>NewCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\NewCategory.aspx.designer.cs">
+      <DependentUpon>NewCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\NewModel.aspx.cs">
+      <DependentUpon>NewModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\NewModel.aspx.designer.cs">
+      <DependentUpon>NewModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceManagement\GenerateInvoice.aspx.cs">
+      <DependentUpon>GenerateInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceManagement\GenerateInvoice.aspx.designer.cs">
+      <DependentUpon>GenerateInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policy.aspx.cs">
+      <DependentUpon>Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Policy.aspx.designer.cs">
+      <DependentUpon>Policy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageRoles.aspx.designer.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\NewCar.aspx.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\NewCar.aspx.designer.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Brandwise.aspx.cs">
+      <DependentUpon>Brandwise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Brandwise.aspx.designer.cs">
+      <DependentUpon>Brandwise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Categorywise.aspx.cs">
+      <DependentUpon>Categorywise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Categorywise.aspx.designer.cs">
+      <DependentUpon>Categorywise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\Modelwise.aspx.cs">
+      <DependentUpon>Modelwise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\Modelwise.aspx.designer.cs">
+      <DependentUpon>Modelwise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getConnectionfromDB.cs" />
+    <Compile Include="Accounts\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\CustomRoleProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Accounts\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShortForm.Master.cs">
+      <DependentUpon>ShortForm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShortForm.Master.designer.cs">
+      <DependentUpon>ShortForm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PagewitholdMasterpage.aspx.cs">
+      <DependentUpon>PagewitholdMasterpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagewitholdMasterpage.aspx.designer.cs">
+      <DependentUpon>PagewitholdMasterpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userforms\ReturnCar.aspx.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userforms\ReturnCar.aspx.designer.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\lato-bold-webfont.eot" />
+    <Content Include="fonts\lato-bold-webfont.ttf" />
+    <Content Include="fonts\lato-bold-webfont.woff" />
+    <Content Include="fonts\lato-bold-webfont.woff2" />
+    <Content Include="fonts\lato-light-webfont.eot" />
+    <Content Include="fonts\lato-light-webfont.ttf" />
+    <Content Include="fonts\lato-light-webfont.woff" />
+    <Content Include="fonts\lato-light-webfont.woff2" />
+    <Content Include="fonts\lato-medium-webfont.eot" />
+    <Content Include="fonts\lato-medium-webfont.ttf" />
+    <Content Include="fonts\lato-medium-webfont.woff" />
+    <Content Include="fonts\lato-medium-webfont.woff2" />
+    <Content Include="fonts\lato-regular-webfont.eot" />
+    <Content Include="fonts\lato-regular-webfont.ttf" />
+    <Content Include="fonts\lato-regular-webfont.woff" />
+    <Content Include="fonts\lato-regular-webfont.woff2" />
+    <Content Include="ShortForm.Master" />
+    <Content Include="Accounts\Web.config" />
+    <Content Include="Admin\Web.config" />
+    <Content Include="Dealer\Web.config" />
+    <Content Include="Userforms\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12663/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

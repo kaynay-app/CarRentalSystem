@@ -1,0 +1,219 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShortForm.master.cs" Inherits="FYP_CarRentalSystem.ShortForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Car Rental Management</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/dropdown.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" href="Images/favicon.ico" />
+
+    
+  
+
+    <style type="text/css">
+        .auto-style1 {
+            direction: ltr;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="auto-style1">
+            <div class="header">
+                <h1>Car Rental System</h1>
+             
+                
+
+
+                <div id="mymovediv" class="mymovediv" >
+<img src="/Images/all-new-micra-banner-side.png" style="width:60px; height:40px" />
+</div>
+            </div>
+
+
+            <div class="navbar">
+                <a href="/Default.aspx" runat="server" id="homelink">Home</a>
+                <a href="/About Us.aspx">About Us</a>
+                <a href="/Contact.aspx">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dd_admin" runat="server">
+                        Admin 
+      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/Admin/AllUsersDetail.aspx">Manage Users</a>
+                        <a href="/Admin/ManageCars.aspx">Manage Cars</a>
+                        <a href="/Admin/ManageCategory.aspx">Manage Categories</a>
+                        <a href="/Admin/ManageBrands.aspx">Manage Brands</a>
+                        <a href="/Admin/ManageModels.aspx">Manage Models</a>
+                        <a href="/Admin/RolesForm.aspx">Manage Roles</a>
+                        <a href="/Admin/Feebacks.aspx">Check Feedbacks</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" id="dd_dealer" runat="server">
+                        Dealer 
+      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/Dealer/ChooseCar.aspx">Cars</a>
+                        <a href="/Dealer/NewCar.aspx">New Car</a>
+                        <a href="/Dealer/NewCategory.aspx">New Category</a>
+                        <a href="/Dealer/NewBrand.aspx">New Brand</a>
+                        <a href="/Dealer/NewModel.aspx">New Model</a>
+                        <a href="/Dealer/DamageCars.aspx">Damaged</a>
+                        <a href="/Dealer/History.aspx">History</a>
+                        <a href="/Dealer/Feedback.aspx">Feedbacks</a>
+
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" id="dd_user" runat="server">
+                        User 
+      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/Userforms/History.aspx">History</a>
+                        <a href="/Userforms/ReturnCar.aspx">Return Car</a>
+                        <a href="/Userforms/Brandwise.aspx">Brandwise</a>
+                        <a href="/Userforms/Categorywise.aspx">Categorywise</a>
+                        <a href="/Userforms/Modelwise.aspx">Modelwise</a>
+                        <a href="/Userforms/Feedback.aspx">Feedback</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dd_accountant" runat="server">
+                        Accountant 
+      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/Accountant/AvailableCars.aspx">Avaiable Cars</a>
+                        <a href="/Accountant/BookedCars.aspx">Booked Cars</a>
+                        <a href="/Accountant/UserDetailOfBookings.aspx">Detail of Bookings</a>
+                        <a href="/Accountant/UserDetailOfCarRent.aspx">Detail of Cars Rented</a>
+                        <a href="/Accountant/ReturnCar.aspx">Return Car</a>
+
+
+                    </div>
+                </div>
+
+                <%-- <a href="#news">News2</a>--%>
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+
+                        <a runat="server" style="float: right" href="~/Accounts/Register.aspx">Register</a>
+                        <a runat="server" style="float: right" href="~/Accounts/Login.aspx">Log in</a>
+
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <asp:LoginStatus Style="float: right" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Accounts/Login.aspx" OnLoggingOut="Unnamed_LoggingOut" />
+                        <a runat="server" style="float: right" href="~/Accounts/Manage.aspx" title="Manage your account">Hello, <%: Context.User.Identity.Name %> !</a></li>
+
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+           <%-- <%: Context.User.Identity.Name %>--%>
+            <%--<div class="topnav">
+
+                <a href="/Default.aspx">Home</a>
+                <a href="/ContactUs.aspx">Contact Us</a>
+                <a href="/AboutUs.aspx">About Us</a>
+                <a href="/Admin/AllUsersDetail.aspx" id="admin">User Details</a>
+                <a href="Admin/ManageRoles.aspx">Roles</a>--%>
+            <%--<a href="#" style="float: right" id="signinbtn" name="loginBtn">Login</a>
+                <a href="#" style="float: right" id="registerbtn" name="registerBtn">Register</a>--%>            <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+
+                        <a runat="server" style="float: right" href="~/Accounts/Register.aspx">Register</a>
+                        <a runat="server" style="float: right" href="~/Accounts/Login.aspx">Log in</a>
+
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+
+                        <a runat="server" style="float: right" href="~/Accounts/Manage.aspx" title="Manage your account">Hello, <%: Context.User.Identity.Name %> !</a></li>
+                                
+                                <asp:LoginStatus Style="float: right" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Accounts/Login.aspx" OnLoggingOut="Unnamed_LoggingOut" />
+
+
+                    </LoggedInTemplate>
+                </asp:LoginView>--%>
+            <%--  </div>--%>
+            <div class="row">
+                <div class="rightcolumn">
+
+                    <div class="card">
+                        <div >
+                            <asp:TextBox ID="txt_Search" runat="server" ToolTip="Search" placeholder="Search here..." ></asp:TextBox>
+                            <asp:Button Text="Search" runat="server" ID="btnSearch" OnClick="btnSearch_Click" UseSubmitBehavior="false" CausesValidation="False" />
+                            <%--<a href='<%#Page.ResolveUrl("~/Userforms/Detail.aspx?CarId=")+Eval("CarId") %>'>Check Details</a>--%>
+                        </div>
+
+                        <div class="rightnav" runat="server" id="AdminRightNav">
+                            <a href="/Admin/AllUsersDetail.aspx">Manage Users</a>
+                            <a href="/Admin/ManageCars.aspx">Manage Cars</a>
+                            <a href="/Admin/ManageCategory.aspx">Manage Categories</a>
+                            <a href="/Admin/ManageBrands.aspx">Manage Brands</a>
+                            <a href="/Admin/ManageModels.aspx">Manage Models</a>
+                            <a href="/Admin/RolesForm.aspx">Manage Roles</a>
+                            <a href="/Admin/Feebacks.aspx">Check Feedbacks</a>
+                        </div>
+                        <div class="rightnav" runat="server" id="DealerRightNav">
+                            <a href="/Dealer/ChooseCar.aspx">Cars</a>
+                            <a href="/Dealer/NewCar.aspx">New Car</a>
+                            <a href="/Dealer/NewCategory.aspx">New Category</a>
+                            <a href="/Dealer/NewBrand.aspx">New Brand</a>
+                            <a href="/Dealer/NewModel.aspx">New Model</a>
+                            <a href="/Dealer/DamageCars.aspx">Damaged</a>
+                            <a href="/Dealer/History.aspx">History</a>
+                            <a href="/Dealer/Feedback.aspx">Feedbacks</a>
+                        </div>
+                        <div class="rightnav" runat="server" id="UserRightNav">
+                            <a href="/Userforms/History.aspx">History</a>
+                            <a href="/Userforms/ReturnCar.aspx">Return Car</a>
+                            <a href="/Userforms/Brandwise.aspx">Brandwise</a>
+                            <a href="/Userforms/Categorywise.aspx">Categorywise</a>
+                            <a href="/Userforms/Modelwise.aspx">Modelwise</a>
+                            <a href="/Userforms/Feedback.aspx">Feedback</a>
+                        </div>
+                        <div class="rightnav" runat="server" id="AnonymousRightNav">
+                            <a href="/Gallery.aspx">Car Gallery</a>
+                            <a href="/Policy.aspx">Our Policy</a>
+
+                        </div>
+                        <div class="rightnav" runat="server" id="AccountantRightNav">
+                            <a href="/Accountant/AvailableCars.aspx">Avaiable Cars</a>
+                            <a href="/Accountant/BookedCars.aspx">Booked Cars</a>
+                            <a href="/Accountant/UserDetailOfBookings.aspx">Detail of Bookings</a>
+                            <a href="/Accountant/UserDetailOfCarRent.aspx">Detail of Cars Rented</a>
+                            <a href="/Accountant/ReturnCar.aspx">Return Car</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="leftcolumn">
+                    <div class="main">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <h3> Car Rental System</h3> 
+            </div>
+        </div>
+    </form>
+</body>
+</html>
