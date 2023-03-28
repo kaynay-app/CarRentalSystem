@@ -30,7 +30,8 @@
 
 ## COMMON BUGS AND FIXES ##
 # DATABASE RECOVERY PENDING FIX #
-* Run this as new query
+* Run this as new query to recover SQL Server database
+* NOTE: Have a backup restore point of the database before trying this query
 ALTER DATABASE [Databasename] SET EMERGENCY;
 GO
 ALTER DATABASE [Databasename] set single_user
@@ -39,3 +40,6 @@ DBCC CHECKDB ([Databasename], REPAIR_ALLOW_DATA_LOSS) WITH ALL_ERRORMSGS;
 GO
 ALTER DATABASE [Databasename] set multi_user
 GO
+
+# IMAGE NOT SHOWING IN BROWSER AFTER UPLOAD FIX #
+* Clear browser cache and restart app on IIS
